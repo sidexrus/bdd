@@ -23,6 +23,7 @@ namespace tictac
             if ((result[1] == result[4]) && (result[1] == result[7]) && result[1] != 0) return 1;
             if ((result[2] == result[5]) && (result[2] == result[8]) && result[2] != 0) return 1;
             if ((result[3] == result[4]) && (result[3] == result[5]) && result[3] != 0) return 1;
+            if ((result[6] == result[7]) && (result[7] == result[8]) && result[6] != 0) return 1;
             return 2;
         }
     }
