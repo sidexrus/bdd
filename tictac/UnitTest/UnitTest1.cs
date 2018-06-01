@@ -68,5 +68,16 @@ namespace UnitTest
                 res[i] = 1;
             Assert.AreEqual(1, g.checkresult(res));
         }
+        [TestMethod]
+        public void TestMethod9()
+        {
+            game g = new game();
+            List<int> res = new List<int>();
+            for (int i = 0; i < 10; i++)
+                res.Add(0);
+            for (int i = 6; i < 9; i++)
+                res[i] = 1;
+            Assert.AreEqual(1, g.checkresult(res));
+        }
     }
 }

@@ -67,6 +67,19 @@ Feature: Testing class game
 	| | | |
 	or
 	| | | |
-	|X|X|X|
+	|O|O|O|
 	| | | |
+
+  Scenario Outline: The bottom line consists of three crosses or toes
+    Given game
+    When when three crosses or toes filled bottom line
+    Then game returns signal
+	Examples: game
+	| | | |
+	| | | |
+	|X|X|X|
+	or
+	| | | |
+	| | | |
+	|O|O|O|
 
