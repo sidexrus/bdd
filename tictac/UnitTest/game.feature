@@ -83,3 +83,16 @@ Feature: Testing class game
 	| | | |
 	|O|O|O|
 
+  Scenario Outline: The first diagonal consists of three crosses or toes
+    Given game
+    When when three crosses or toes filled first diagonal
+    Then game returns signal
+	Examples: game
+	|X| | |
+	| |X| |
+	| | |X|
+	or
+	|O| | |
+	| |O| |
+	| | |O|
+
