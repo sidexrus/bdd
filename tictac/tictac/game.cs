@@ -13,6 +13,7 @@ namespace tictac
 
         public void next_step()
         {
+            x_o = !x_o;
         }
     }
 }
