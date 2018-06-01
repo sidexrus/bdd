@@ -96,3 +96,16 @@ Feature: Testing class game
 	| |O| |
 	| | |O|
 
+  Scenario Outline: The second diagonal consists of three crosses or toes
+    Given game
+    When when three crosses or toes filled second diagonal
+    Then game returns signal
+	Examples: game
+	| | |X|
+	| |X| |
+	|X| | |
+	or
+	| | |O|
+	| |O| |
+	|O| | |
+
