@@ -30,3 +30,16 @@ Feature: Testing class game
 	|O| | |
 	|O| | |
 	|O| | |
+
+  Scenario Outline: The mid column consists of three crosses or toes
+    Given game
+    When when three crosses or toes filled mid column
+    Then game returns signal
+	Examples: game
+	| |X| |
+	| |X| |
+	| |X| |
+	or
+	| |O| |
+	| |O| |
+	| |O| |
