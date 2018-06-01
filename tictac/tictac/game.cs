@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace tictac
 {
-    class game
+    public class game
     {
         public int uu;
         public bool x_o = true;
+
+        public void next_step()
+        {
+        }
     }
 }

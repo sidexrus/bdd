@@ -10,6 +10,9 @@ namespace UnitTest
         [TestMethod]
         public void TestMethod1()
         {
+            game g = new game();
+            g.next_step();
+            Assert.AreEqual(false, g.x_o);
         }
     }
 }
