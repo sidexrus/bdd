@@ -16,6 +16,9 @@ namespace tictac
             x_o = !x_o;
         }
 
-
+        public int checkresult(List<int> result)
+        {
+            return 2;
+        }
     }
 }
