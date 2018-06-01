@@ -109,3 +109,9 @@ Feature: Testing class game
 	| |O| |
 	|O| | |
 
+  Scenario Outline: Draw
+    Given game
+    When draw
+    Then game returns signal
+	Examples: game
+
